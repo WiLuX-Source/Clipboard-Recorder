@@ -1,0 +1,66 @@
+#:import utils kivy.utils
+<UpperControls>
+    canvas:
+        Color:
+            rgb: utils.get_color_from_hex('#18191c')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgb: utils.get_color_from_hex('#FFFFFF')
+        Line:
+            points: (self.x,151,self.width,151)
+            width: 1
+    rows: 3
+    AnchorLayout:
+        anchor_x:'center'
+        anchor_y:'center'
+        Label:
+            id:last_item
+            text:''
+            font_size:20
+        Image:
+            id:img
+            opacity:0
+            allow_stretch:True
+            keep_ratio:True
+            size_hint:0.98,0.98
+    Controls:
+        height:90
+        size_hint_y:None
+    ToggleButton:
+        on_state:root.ButtonToggle(self)
+        text:'Record OFF'
+        size_hint_y:None
+        height:60
+        background_color:'#02198B'
+
+<Controls>
+    canvas:
+        Color:
+            rgb: utils.get_color_from_hex('#202225')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    rows:2
+    cols:2
+    row_default_height:40
+    row_force_default: True
+    Label:
+        text:"Key Word"
+        valign: 'center'
+    TextInput:
+        id:keyword
+        hint_text:"^[a-zA-Z0-9_]*$"
+        multiline:False
+        valign: 'center'
+        on_text:root.Keyword_set()
+        background_color:'#333333'
+        foreground_color: "#FFFFFF"
+    Label:
+        text:"Current Key Word :"
+        valign: 'center'
+    Label:
+        id:display_keyword
+        text:"-"
+        valign: 'center'
