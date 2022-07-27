@@ -47,3 +47,9 @@ Clipboard Recorder supports Windows, MacOS and Linux operating systems, but it c
 ---
 
 ### FAQ
+
+#### App keeps crashing when saving image?
+Create a folder called "Images"
+
+#### I found a bug what to do?
+Open an issue in this repo.
