@@ -2,6 +2,8 @@
 
 # Clipboard Recorder
 
+![](https://i.imgur.com/OnCpXFK.png)
+
 </div>
 
 [![Github last commit date](https://img.shields.io/github/last-commit/WiLuX-Source/Clipboard-Recorder.svg?label=Updated&logo=github&cacheSeconds=600)](https://github.com/WiLuX-Source/Clipboard-Recorder/commits)
@@ -13,6 +15,8 @@
 [![Github release downloads](https://img.shields.io/github/downloads-pre/WiLuX-Source/Clipboard-Recorder/latest/total.svg?label=Last+Downloads&logo=github&cacheSeconds=600)](https://github.com/WiLuX-Source/Clipboard-Recorder/releases)
 
 ---
+
+
 
 ## Description
 
