@@ -4,17 +4,18 @@ from kivy.lang.builder import Builder
 from kivy.core.clipboard import Clipboard
 from kivy.config import Config
 from kivy.clock import Clock
-from KivyOnTop import register_topmost
 from kivy.core.image import Image as CoreImage
 from PIL import ImageGrab, Image
 from io import BytesIO
 from datetime import datetime
+import os
 Builder.load_file('./App.kv')
 Config.set('graphics','resizable',0)
 Config.set('input','mouse','mouse,multitouch_on_demand')
 Config.set('kivy','exit_on_escape',0)
 Config.set('graphics','height',500)
 Config.set('graphics','width',400)
+Config.set('graphics','always_on_top',1)
 class UpperControls(GridLayout):
     temp_clipboard = ''
     temp_img = Image.new(mode="RGB", size=(10, 10))
@@ -56,10 +57,10 @@ class Controls(GridLayout):
 
 class ClipboardApp(App):
     def build(self):
-        from kivy.core.window import Window
         self.title = "WiLuX Clipboard Recorder"
-        register_topmost(Window, self.title)
         return UpperControls()
 
+if not os.path.exists("Images"):
+    os.makedirs("Images")
 
 ClipboardApp().run()
