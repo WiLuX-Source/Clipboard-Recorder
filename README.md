@@ -15,7 +15,7 @@
 
 ## Description
 
-Simple "Clipboard Recorder" made with Python & Kivy gui.
+Simple "Clipboard Recorder" made with both "Python Kivy gui" & C#.
 
 ---
 
@@ -29,18 +29,22 @@ Simple "Clipboard Recorder" made with Python & Kivy gui.
 ---
 
 ### Installation
-
+- Python Version :
 ```console
    1. cd [App Location]
    2. pip install -r requirements.txt
    3. python App.py
    ```
+- C# Version :
+[Download](https://github.com/WiLuX-Source/Clipboard-Recorder/releases/latest)
 
 ---
 
 ### Compatibility
 
 Clipboard Recorder supports Windows, MacOS and Linux operating systems, but it can work anywhere where you can obtain working Python3 runtime.
+
+Clipboard Recorder C# version only supports Windows.
 
 ---
 
