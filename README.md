@@ -12,7 +12,7 @@
 </div>
 
 ---
-
+## DISCONTINUED BECAUSE OF EXISTING SOLUTIONS ARE BETTER NOW
 ## Description
 
 Simple "Clipboard Recorder" made with both "Python Kivy gui" & C#.
